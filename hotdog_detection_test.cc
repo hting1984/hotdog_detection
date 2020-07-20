@@ -17,8 +17,7 @@ limitations under the License.
 #include "tensorflow/lite/micro/examples/hotdog_detection/model_settings.h"
 
 #include "tensorflow/lite/micro/examples/hotdog_detection/hotdogimage/hotdog_image_data_int.h"
-//#include "tensorflow/lite/micro/examples/hotdog_detection/intmodel_withoutbatchnorm/detection_model_without_batch.h"
-#include "tensorflow/lite/micro/examples/hotdog_detection/tmp_test/tmp_test.h"
+#include "tensorflow/lite/micro/examples/hotdog_detection/simple_model/simple_model.h"
 
 
 #include "tensorflow/lite/micro/micro_optional_debug_tools.h"
@@ -49,7 +48,7 @@ TF_LITE_MICRO_TEST(TestInvoke) {
   // Map the model into a usable data structure. This doesn't involve any
   // copying or parsing, it's a very lightweight operation.
  
- const tflite::Model* model = ::tflite::GetModel(tmp_test_tflite);
+ const tflite::Model* model = ::tflite::GetModel(simple_tflite);
   
 
  if (model->version() != TFLITE_SCHEMA_VERSION) {

@@ -16,7 +16,7 @@ tensorflow/lite/micro/examples/hotdog_detection/hotdogimage/hotdog_image_data_in
 
 hotdog_detection_TEST_HDRS := \
 tensorflow/lite/micro/examples/hotdog_detection/hotdogimage/hotdog_image_data_int.h \
-tensorflow/lite/micro/examples/hotdog_detection/tmp_test/tmp_test.h 
+tensorflow/lite/micro/examples/hotdog_detection/simple_model/simple_model.h 
 #$(hotdog_detection_MODEL_HDRS)
 
 IMAGE_PROVIDER_TEST_SRCS := \
