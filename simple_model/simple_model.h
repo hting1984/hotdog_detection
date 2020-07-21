@@ -19,8 +19,8 @@ limitations under the License.
 // Skip the 54 byte bmp3 header and add the reset of the bytes to a C array:
 // xxd -s 54 -i /tmp/person.bmp3 > /tmp/person.cc
 
-#ifndef TENSORFLOW_LITE_MICRO_EXAMPLES_HOTDOG_DETECTION_TEMP_TEST_DATA_H_
-#define TENSORFLOW_LITE_MICRO_EXAMPLES_HOTDOG_DETECTION_TEMP_TEST_DATA_H_
+#ifndef TENSORFLOW_LITE_MICRO_EXAMPLES_HOTDOG_DETECTION_SIMPLE_TEST_DATA_H_
+#define TENSORFLOW_LITE_MICRO_EXAMPLES_HOTDOG_DETECTION_SIMPLE_TEST_DATA_H_
 
 #include <cstdint>
 
@@ -7304,6 +7304,6 @@ unsigned char simple_tflite[] = {
   0x03, 0x00, 0x00, 0x00
 };
 unsigned int simple_tflite_len = 4240;
-unsigned int tmp_test_tflite_len = 83008;
+
 
 #endif  // TENSORFLOW_LITE_MICRO_EXAMPLES_PERSON_DETECTION_PERSON_IMAGE_DATA_H_

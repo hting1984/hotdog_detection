@@ -38,7 +38,7 @@ TF_LITE_MICRO_TESTS_BEGIN
 TF_LITE_MICRO_TEST(TestInvoke) {
   
 
-  constexpr int tensor_arena_size =  600* 1024;
+  constexpr int tensor_arena_size =  90* 1024;
   uint8_t tensor_arena[tensor_arena_size];
  
 
@@ -107,7 +107,7 @@ TF_LITE_MICRO_TEST(TestInvoke) {
   TF_LITE_MICRO_EXPECT_EQ(kNumChannels, input->dims->data[3]);
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32,input->type);
 
-  printf("input bytes:%d",input->bytes);
+  //printf("input bytes:%d",input->bytes);
 
   TF_LITE_MICRO_EXPECT_EQ(9216*4,input->bytes);
 
